@@ -1,0 +1,33 @@
+
+  <h2>Sample PWA </h2>
+  <br>
+  <select (change)="getUserDt($event.target.value)">
+    <option value="1">1</option>
+    <option value="2">2</option>
+  </select>
+  <br>
+  <br>
+<table style="width: 100%; border : 1px solid;border-collapse: collapse;" border="1"> 
+  <tr>
+    <th>
+      First Name
+    </th>
+    <th>
+      Last Name
+    </th>
+    <th>
+      Email Id
+    </th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>
+      {{user.first_name}}
+    </td>
+    <td>
+      {{user.last_name}}
+    </td>
+    <td>
+      {{user.email}}
+    </td>
+  </tr>
+</table>
